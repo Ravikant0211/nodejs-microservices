@@ -23,30 +23,30 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">100% </span>
+                <span class="strong">44.73% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>38/38</span>
+                <span class='fraction'>17/38</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>10/10</span>
+                <span class='fraction'>1/1</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">100% </span>
+                <span class="strong">16.66% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>6/6</span>
+                <span class='fraction'>1/6</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">100% </span>
+                <span class="strong">44.73% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>38/38</span>
+                <span class='fraction'>17/38</span>
             </div>
         
             
@@ -61,7 +61,7 @@
             </div>
         </template>
     </div>
-    <div class='status-line high'></div>
+    <div class='status-line low'></div>
     <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -107,73 +107,73 @@
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">4x</span>
-<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span></td><td class="text"><pre class="prettyprint lang-js">import { ICatalogRepository } from "../interface/catalogRepository.interface";
 import { Product } from "../models/product";
 &nbsp;
 export class CatalogService {
   constructor(private readonly repository: ICatalogRepository) {}
 &nbsp;
-  async createProduct(input: any) {
-   const data = await this.repository.create(input);
-   if (!data.id) {
-    throw new Error('Unable to create the Product')
-   }
-   return data;
-  }
+  async <span class="fstat-no" title="function not covered" >createProduct(input: any) {</span>
+<span class="cstat-no" title="statement not covered" >   const data = await this.repository.create(input);</span>
+<span class="cstat-no" title="statement not covered" >   if (!data.id) {</span>
+<span class="cstat-no" title="statement not covered" >    throw new Error('Unable to create the Product')</span>
+<span class="cstat-no" title="statement not covered" >   }</span>
+<span class="cstat-no" title="statement not covered" >   return data;</span>
+<span class="cstat-no" title="statement not covered" >  }</span>
 &nbsp;
-  async updateProduct(input: any) {
-    const data = await this.repository.update(input);
-    // Emit an event to update data in elastic search
-    return data;
-  }
+  async <span class="fstat-no" title="function not covered" >updateProduct(input: any) {</span>
+<span class="cstat-no" title="statement not covered" >    const data = await this.repository.update(input);</span>
+<span class="cstat-no" title="statement not covered" >    // Emit an event to update data in elastic search</span>
+<span class="cstat-no" title="statement not covered" >    return data;</span>
+<span class="cstat-no" title="statement not covered" >  }</span>
 &nbsp;
-  async getProduct(id: number) {
-    const product = await this.repository.findOne(id);
-    return product;
-  }
+  async <span class="fstat-no" title="function not covered" >getProduct(id: number) {</span>
+<span class="cstat-no" title="statement not covered" >    const product = await this.repository.findOne(id);</span>
+<span class="cstat-no" title="statement not covered" >    return product;</span>
+<span class="cstat-no" title="statement not covered" >  }</span>
 &nbsp;
   // instead of this, we will get products from Elastic search
-  async getProducts(limit: number, offset: number) {
-    const products = await this.repository.findAll(limit, offset);
+  async <span class="fstat-no" title="function not covered" >getProducts(limit: number, offset: number) {</span>
+<span class="cstat-no" title="statement not covered" >    const products = await this.repository.findAll(limit, offset);</span>
+<span class="cstat-no" title="statement not covered" ></span>
+<span class="cstat-no" title="statement not covered" >    return products;</span>
+<span class="cstat-no" title="statement not covered" >  }</span>
 &nbsp;
-    return products;
-  }
-&nbsp;
-  async deleteProduct(id: number) {
-    const response = await this.repository.delete(id);
-    // delete product from Elastic search
-    return response;
-  }
+  async <span class="fstat-no" title="function not covered" >deleteProduct(id: number) {</span>
+<span class="cstat-no" title="statement not covered" >    const response = await this.repository.delete(id);</span>
+<span class="cstat-no" title="statement not covered" >    // delete product from Elastic search</span>
+<span class="cstat-no" title="statement not covered" >    return response;</span>
+<span class="cstat-no" title="statement not covered" >  }</span>
 }</pre></td></tr></table></pre>
 
                 <div class='push'></div><!-- for sticky footer -->
@@ -181,7 +181,7 @@ export class CatalogService {
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at 2025-12-16T16:37:09.443Z
+                at 2025-12-18T16:19:12.944Z
             </div>
         <script src="../prettify.js"></script>
         <script>
