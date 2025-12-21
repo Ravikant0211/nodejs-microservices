@@ -14,6 +14,9 @@ export class CatalogService {
 
   async updateProduct(input: any) {
     const data = await this.repository.update(input);
+     if (!data.id) {
+      throw new Error('Unable to update the Product')
+    }
     // Emit an event to update data in elastic search
     return data;
   }

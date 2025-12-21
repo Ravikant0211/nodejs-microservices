@@ -1,21 +1,27 @@
 import { ICatalogRepository } from "../interface/catalogRepository.interface";
 import { Product } from "../models/product";
+import { ProductFactory } from "../utils/fixtures";
 
 export class CatalogRepository implements ICatalogRepository {
     create(data: any): Promise<Product> {
-        throw new Error("Method not implemented.");
+        const product = ProductFactory.build();
+        return Promise.resolve(product);
     }
     update(data: any): Promise<Product> {
-        throw new Error("Method not implemented.");
+        const product = ProductFactory.build();
+        return Promise.resolve(product);
     }
-    delete(id: number): Promise<void> {
-        throw new Error("Method not implemented.");
+    delete(id: number): Promise<Product> {
+        const product = ProductFactory.build();
+        return Promise.resolve(product);
     }
     findOne(id: number): Promise<Product | null> {
-        throw new Error("Method not implemented.");
+        const product = ProductFactory.build();
+        return Promise.resolve(product);
     }
-    findAll(): Promise<Product[]> {
-        throw new Error("Method not implemented.");
+    findAll(limit: number, offset: number): Promise<Product[]> {
+        const products = ProductFactory.buildList(limit);
+        return Promise.resolve(products);
     }
     
 }
