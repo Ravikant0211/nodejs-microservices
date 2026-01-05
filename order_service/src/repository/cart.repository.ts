@@ -1,7 +1,13 @@
+import { DB } from "../db/db.connection";
+import { cartsTable } from "../db/schema";
 import { CartRepositoryType } from "../types/repository.type";
 
 const createCart = async (input: any): Promise<{}> => {
-  return Promise.resolve({ message: "Fake response from createCart", input });
+  const result = await DB.insert(cartsTable).values({
+    customerId: 123,
+  }).returning({ cartId: cartsTable.id });
+  console.log("result", result);
+  return Promise.resolve({ message: "Fake response from createCart", result });
 };
 
 const findCart = async (input: any): Promise<{}> => {
